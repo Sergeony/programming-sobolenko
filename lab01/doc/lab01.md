@@ -45,21 +45,21 @@
 
 За допомогою nano редагуємо дані програми та до Makefile додаймо all
 
-![](res/updated_files.png)
+![](assets/updated_files.png)
 
 Рисунок 2.4 - Виконання бінарних файлів після зміни даних програми та Makefile
 
 
 Прапорцем --version визначаємо версію clang та make
 
-![](res/versions.png)
+![](assets/versions.png)
 
 Рис.2.5 - Версія make, clang 
 
 
 Визначимо значення утиліти man
 
-![](res/man.png)
+![](assets/man.png)
 
 Рис.6 Загальний опис утиліти man
 
