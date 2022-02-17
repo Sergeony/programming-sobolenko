@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>lab08: Лабораторна робота №8 Вступ до документації коду</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">lab08
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Демонстрація документування коду засобами `doxygen`</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Пошук');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Лабораторна робота №8 Вступ до документації коду </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Мета: Переробити програми, розроблені під час виконання лабораторних робіт на теми "Массивы" і "Цикли" таким чином, щоб код не мав повторень, використовуючи функції та написати додаткову програму </p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+1 Вимоги</h1>
+<h2><a class="anchor" id="autotoc_md2"></a>
+1.1 Розробник</h2>
+<p>Інформація про розробника:</p><ul>
+<li>Соболенко С. С.;</li>
+<li>КІТ-121б;</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md3"></a>
+1.2 Загальне завдання</h2>
+<p>1) Переробити програми, розроблені під час виконання лабораторних робіт на теми "Массивы" і "Цикли" таким чином, щоб код не мав повторень, використовуючи функції 2) Написати додаткову програму з використанням функцій 3) Продемонструвати роботу в режимі відлагодження</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+1.3 Задача</h2>
+<ol type="1">
+<li>Переробити програму с lab05 використовуючи функції</li>
+<li>Переробити програму с lab06 використовуючи функції</li>
+<li>Визвати функції з використанням згенерованих параметрів</li>
+<li>Написати програму що визначає, скільки серед заданої послідовності чисел таких пар, у котрих перше число менше наступного, використовуючи функцію</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md5"></a>
+2. ОПИС ПРОГРАМИ</h1>
+<h2><a class="anchor" id="autotoc_md6"></a>
+2.1 Функціональне призначення</h2>
+<ol type="1">
+<li>Призначення перших двох програм не змінилось</li>
+<li>Призначення нової програми: знаходження рішення алгоритму з масивом за допомогою арифметичних операцій, циклічної конструкції, умовної конструкції та функції. Результат зберігається у відповідній змінній. Демонстрація знайденого результату передбачає покрокове виконання програми в режимі відлагодження.</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md7"></a>
+2.2 Опис логічної структури</h2>
+<p>1) Логіка перших двох програм не змінилась, лише програми була перероблені з використанням функцій та додано визов ціх функцій зі згенерованими значеннями</p>
+<p>2) Реалізовую функцію, у якій циклом проходжу по всім членам послідовності, починаючи з другого, та завдяки умові у циклі з'ясовую чи є i-ий елемент меншим за (i-1)-ий, якщо так, то збільшую кількість знайдених пар</p>
+<p>Алгоритм програми наведено на рис.2.1.</p>
+<p><img src="assets/scheme.png" alt="" class="inline"/></p>
+<p>Рисунок 2.1 - Схема алгоритму програми</p>
+<p>Структура проекту наведена на рис.2.2.</p>
+<p><img src="assets/project_structure.png" alt="" class="inline"/></p>
+<p>Рисунок 2.2 - Структура проекту</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+2.3 Важиливі фрагменти програми</h2>
+<p>Обʼявлення та встановлення початкових значень змінних</p>
+<div class="fragment"><div class="line"><span class="comment">/* Задаю довжину послідовністі */</span></div>
+<div class="line"><span class="preprocessor">#define NUMBERS_COUNT 5</span></div>
+<div class="line"><span class="comment">/* Задаю послідовність чисел */</span></div>
+<div class="line"><span class="keywordtype">int</span> numbers [NUMBERS_COUNT] = {3, 2, 4, 3, 1};</div>
+<div class="line"><span class="comment">/* Результуюча кількість пар у яких перше число більше другого */</span></div>
+<div class="line"><span class="keywordtype">int</span> result = get_pairs_count(numbers, NUMBERS_COUNT);</div>
+</div><!-- fragment --><p>Підрахунок кількості пар які задовольнять вказаній умові</p>
+<div class="fragment"><div class="line">    <span class="keywordtype">int</span> get_pairs_count(<span class="keywordtype">int</span> consequence[], <span class="keywordtype">int</span> consequence_length) {</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* Задаю лічильник кількості знайдених пар */</span></div>
+<div class="line">        <span class="keywordtype">int</span> pairs_count = 0;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* Проходжусь по всім числам послідовності починаючи з другого для визначення кількості пар */</span></div>
+<div class="line">        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 1; i &lt; consequence_length; i++) {</div>
+<div class="line">            </div>
+<div class="line">            <span class="comment">/* Якщо i-те число менше ніж (i-1)-ше число, то збільшуємо кількість пар */</span></div>
+<div class="line">        <span class="keywordflow">if</span>(consequence[i] &lt; consequence[i-1]) {</div>
+<div class="line">            pairs_count++;</div>
+<div class="line">        }</div>
+<div class="line">        }</div>
+<div class="line">        </div>
+<div class="line">        <span class="keywordflow">return</span> pairs_count;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
+3 ВАРІАНТИ ВИКОРИСТАННЯ</h1>
+<p>Для демонстрації результатів використовується покрокове виконання програми.</p>
+<p>0) Збірка програми (див. рис.3.0)</p>
+<p><img src="assets/project_build.png" alt="" class="inline"/></p>
+<p>Рисунок 3.0 - Виконання Makefile</p>
+<p>1) Установка точок зупину першої програми(див. рис.3.1.1)</p>
+<p><img src="assets/cycles_breakpoints.png" alt="" class="inline"/></p>
+<p>Рисунок 3.1.1 - Точки зупину, що встановлені</p>
+<p>2) Покрокове виконання першої програми (див. рис.3.1.2).</p>
+<p><img src="assets/cycles_result.png" alt="" class="inline"/></p>
+<p>Рисунок 3.1.2 - Результат у змінній "result"</p>
+<p>3) Установка точок зупину другої програми(див. рис.3.2.1)</p>
+<p><img src="assets/arrays_breakpoints.png" alt="" class="inline"/></p>
+<p>Рисунок 3.2.1 - Точки зупину, що встановлені</p>
+<p>4) Покрокове виконання другої програми (див. рис.3.2.2).</p>
+<p><img src="assets/arrays_result.png" alt="" class="inline"/></p>
+<p>Рисунок 3.2.2 - Результат у змінній "result"</p>
+<p>5) Установка точок зупину нової програми(див. рис.3.3.1)</p>
+<p><img src="assets/addition_breakpoints.png" alt="" class="inline"/></p>
+<p>Рисунок 3.3.1 - Точки зупину, що встановлені</p>
+<p>6) Покрокове виконання нової програми (див. рис.3.3.2).</p>
+<p><img src="assets/addition_result.png" alt="" class="inline"/></p>
+<p>Рисунок 3.3.2 - Результат у змінній "result"</p>
+<h1><a class="anchor" id="autotoc_md10"></a>
+ВИСНОВКИ</h1>
+<p>Перероблено код з перших двох програм з використанням функцій, також до коду додано возов ціх функцій зі псевдоранодмно згенерованими параметрами. Написано додаткову програму з використанням функцій. Засоби відлагодження та покрокове виконання програми дозволяють продемонструвати коректність реалізованого алгоритму. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
