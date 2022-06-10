@@ -1,27 +1,50 @@
-/**
- * @file lib.h
- * Header file of functions for lab09.
- * @author sergey_sobolenko
- * @version 0.0.1
- * @date 15.02.2022
- */
 #ifndef __LIB_H__
 #define __LIB_H__
+
+/**
+ * @file lib.h
+ * @brief Файл з вхідними даними та перерахуванням функцій
+ * 
+ * @author Sobolenko S.
+ * @version 0.0.1
+ * @date 15-feb-2022
+ */
+
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- *Counts the number of words in a string.
- *@param string[] text for counts
- *@param string_len text length
- *@return words count
+ * Довжина тексту
  */
-int get_words_count(char string[], int string_len);
+#define TEXT_LEN 9
 
 /**
- *Checks if a number is equal to the sum of its divisors.
- *@param number to check
- *@return is number great
+ * Функція кількості слів у тексті
+ * 
+ * Опис роботи:
+ * - Якщо 1-ий символ слова не пробіл, то рахуємо як 1-ше слово
+ * - У циклі, починаючи с 2-ого елемента перевіряю чи є даний символ НЕ пробілом, 
+ *   а попередній пробілом. Якщо так, то рахую слово
+ * 
+ * @param string[] вхідний текст
+ * @param stringLen довжина тексту
+ * 
+ * @return words count
  */
-bool is_number_great(int number);
+int getWordsCount(char string[], int stringLen);
+
+/**
+ * Функція досконалого числа
+ * 
+ * Опис роботи:
+ * - Якщо слово дорівнює сумі своїх дільників, то воно досконале
+ * 
+ * @param number вхідне число
+ * 
+ * @return чи є число досконалим
+ */
+bool isNumberGreat(int number);
 
 #endif
